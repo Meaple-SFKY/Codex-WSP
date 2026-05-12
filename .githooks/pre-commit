@@ -1,0 +1,16 @@
+#!/bin/sh
+
+protected_patterns='README.md|README.zh-CN.md|AGENTS.md|SPEC.md|TASKS.md|DESIGN.md|UI_RULES.md|READER_EXPERIENCE.md|TESTING.md|prompts/.*\.md|docs/.*\.md'
+
+changed_files=$(git diff --cached --name-only)
+
+for file in $changed_files; do
+  echo "$file" | grep -Eq "$protected_patterns"
+  if [ $? -eq 0 ]; then
+    echo "❌ Commit blocked: protected governance file modified: $file"
+    echo "These files are maintained by ChatGPT through GitHub."
+    exit 1
+  fi
+done
+
+exit 0
