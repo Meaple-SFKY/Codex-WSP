@@ -1,0 +1,19 @@
+{
+  "name": "codex-wsp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AI-native monorepo application factory workspace.",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "check": "pnpm lint && pnpm typecheck && pnpm test",
+    "protect:docs": "bash scripts/check-protected-docs.sh"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  }
+}
