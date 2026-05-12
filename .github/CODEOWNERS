@@ -1,0 +1,20 @@
+# Governance files maintained by ChatGPT workflow owner
+
+README.md @Meaple-SFKY
+README.zh-CN.md @Meaple-SFKY
+AGENTS.md @Meaple-SFKY
+
+docs/* @Meaple-SFKY
+prompts/* @Meaple-SFKY
+templates/* @Meaple-SFKY
+
+apps/**/README.md @Meaple-SFKY
+apps/**/README.zh-CN.md @Meaple-SFKY
+apps/**/AGENTS.md @Meaple-SFKY
+apps/**/SPEC.md @Meaple-SFKY
+apps/**/TASKS.md @Meaple-SFKY
+apps/**/DESIGN.md @Meaple-SFKY
+apps/**/UI_RULES.md @Meaple-SFKY
+apps/**/READER_EXPERIENCE.md @Meaple-SFKY
+apps/**/TESTING.md @Meaple-SFKY
+apps/**/prompts/* @Meaple-SFKY
